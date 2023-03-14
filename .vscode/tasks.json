@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build DigiEngine",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++14",
+                "${workspaceFolder}/Engine/DigiEngine.cpp",
+                "-o",
+                "${workspaceFolder}/Build/DigiEngine.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
